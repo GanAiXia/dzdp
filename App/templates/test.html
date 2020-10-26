@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+</head>
+<body>
+<h1>{{ dph }}！</h1>
+<form action="{{ url_for('home.dzdp') }}" method="POST" onkeydown="if(event.keyCode==13)newsubmit();">
+    <input type="text" name="wangzhi" placeholder="店铺地址"/>
+    <br/>
+    <input type="text" name="qianzhui" placeholder="前缀"/>
+    <br/>
+    <input class="denglu" type="button" value="chaxun" onClick="newsubmit();"/>
+</form>
+<script>
+               //验证
+            function newsubmit(){
+                $("form").submit();
+                console.log('tijiao');
+            }
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+flask-script
+flask_migrate
+flask_sqlalchemy
+=======
+flask-script
+flask_migrate
+flask_sqlalchemy
+>>>>>>> 01e03a548db97209c320d8345355e897371e1697
+flask_pymysql

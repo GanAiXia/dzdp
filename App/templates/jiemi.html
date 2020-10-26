@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解密</title>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+</head>
+<body>
+<h1>{{ msg }}！</h1>
+<button class="jiemi">开始解密</button>
+<script>
+               //验证
+            function newsubmit(){
+                $("form").submit();
+                console.log('tijiao');
+            }
+            $('.jiemi').click(function () {
+                $.get("{{ url_for('home.jiemi') }}")
+            })
+</script>
+</body>
+</html>
